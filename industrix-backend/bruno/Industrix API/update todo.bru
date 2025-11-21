@@ -1,0 +1,15 @@
+meta {
+  name: update todo
+  type: http
+  seq: 6
+}
+
+put {
+  url: {{baseUrl}}/api/todos/{{todoId}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

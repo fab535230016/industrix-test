@@ -1,0 +1,22 @@
+meta {
+  name: Uncompleted task
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/api/todos?page=1&limit=10&completed=false
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 1
+  limit: 10
+  completed: false
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

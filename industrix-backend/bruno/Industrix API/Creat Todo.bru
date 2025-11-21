@@ -1,0 +1,42 @@
+meta {
+  name: Creat Todo
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/todos
+  body: json
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "title": "Complete coding challenge",
+    "description": "desc",
+    "categoryId": 1,
+    "priority": "high",
+    "due_date": "2025-12-31T23:59:59Z"
+  }
+  
+}
+
+body:text {
+  {
+    "title": "Test task",
+    "description": "Test desc",
+    "categoryId": {{categoryId}},
+    "priority": "medium",
+    "due_date": "2025-12-31T23:59:59Z"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

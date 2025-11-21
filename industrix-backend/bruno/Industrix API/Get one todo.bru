@@ -1,0 +1,15 @@
+meta {
+  name: Get one todo
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{baseUrl}}/api/todos/{{todoId}}
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}
