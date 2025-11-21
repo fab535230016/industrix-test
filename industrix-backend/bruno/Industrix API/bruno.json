@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Industrix API",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

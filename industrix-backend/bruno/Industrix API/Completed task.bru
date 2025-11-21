@@ -1,0 +1,22 @@
+meta {
+  name: Completed task
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/api/todos?page=1&limit=10&completed=true
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 1
+  limit: 10
+  completed: true
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
