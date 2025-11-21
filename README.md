@@ -26,7 +26,7 @@ The app lets users create, update, filter, and manage todos with categories, pri
 - Unit tests for core backend logic
 
 ---
-HOW TO RUN TODO-LIST : <br>
+## HOW TO RUN TODO-LIST : <br>
 open industrix-backend/config/config.js <br>
 connect it to your postgresql <br>
 change the password to ur postgresql password <br>
