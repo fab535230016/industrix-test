@@ -34,6 +34,7 @@ rename .env .example to .env on both frontend and backend folder. <br>
 
 open new local terminal (For Backend) : <br>
 cd industrix-backend <br>
+npm install
 npm install express pg pg-hstore sequelize sequelize-cli dotenv cors <br>
 npm install -D nodemon
 
