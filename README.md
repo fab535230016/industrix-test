@@ -1,6 +1,6 @@
-# Industrtix Todo Application
+# Industrix Todo Application
 
-A full-stack todo management app built for the Industrtix coding exercise.  
+A full-stack todo management app built for the Industrix coding test.  
 The app lets users create, update, filter, and manage todos with categories, priorities, and completion status.
 
 - **Frontend:** Next.js / React + TypeScript + Ant Design (antd)
@@ -80,7 +80,7 @@ limit and offset are passed directly into findAndCountAll, and I return both the
 I build a where object based on query params.<br>
 Search is applied using case-insensitive ILIKE on text fields, and I also support filtering by completed status and categoryId via the same where object.<br>
 This way, pagination always happens after filtering in the database, so the client never paginates over already-filtered data.<br>
-<br>For this exercise I relied on PostgreSQL’s default indexes on primary and foreign keys; I didn’t add custom indexes yet because the dataset is small.<br>
+<br>For this test I relied on PostgreSQL’s default indexes on primary and foreign keys; I didn’t add custom indexes yet because the dataset is small.<br>
 2. How did you structure your React components? <br>
    I split the app into small (different text file), reusable components: forms, list items, modal UI, and API utilities. Pages stay clean, and each component only handles one concern. <br>
 3. What backend architecture did you choose and why? <br>
