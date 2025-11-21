@@ -38,7 +38,7 @@ npm install
 npm install express pg pg-hstore sequelize sequelize-cli dotenv cors <br>
 npm install -D nodemon
 
-npm run drop <br>
+npm run drop (if needed, to empty the server db) <br>
 npm run create <br>
 npm run migrate <br>
 npm run seed <br>
