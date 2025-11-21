@@ -65,14 +65,14 @@ Search is applied using case-insensitive ILIKE on text fields, and I also suppor
 This way, pagination always happens after filtering in the database, so the client never paginates over already-filtered data.<br>
 <br>For this exercise I relied on PostgreSQL’s default indexes on primary and foreign keys; I didn’t add custom indexes yet because the dataset is small.<br>
 2. How did you structure your React components? <br>
-   I split the app into small (different text file), reusable components: forms, list items, modal UI, and API utilities. Pages stay clean, and each component only handles one concern. 
+   I split the app into small (different text file), reusable components: forms, list items, modal UI, and API utilities. Pages stay clean, and each component only handles one concern. <br>
 3. What backend architecture did you choose and why? <br>
-   I used a REST API with Express and Sequelize.
-   It’s simple, easy to use, and works perfectly with a relational database like PostgreSQL.
+   I used a REST API with Express and Sequelize.<br>
+   It’s simple, easy to use, and works perfectly with a relational database like PostgreSQL.<br>
 4. How did you handle data validation?<br>
    Frontend: Ant Design Form rules <br>
-   Backend: Custom checks in controllers + Sequelize built-in validators
-   This prevents bad data from reaching the database.
+   Backend: Custom checks in controllers + Sequelize built-in validators<br>
+   This prevents bad data from reaching the database.<br>
 
 Testing & Quality Questions
 1. What did you choose to unit test and why? <br>
